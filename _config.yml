@@ -30,9 +30,9 @@ twitter_username: jsamzapata
 github_username:  samzapata
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# theme: minima
+# plugins:
+  # - jekyll-feed
 sass:
   sass_dir: _sass
 include: ['_pages']
