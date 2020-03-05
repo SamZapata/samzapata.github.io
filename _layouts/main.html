@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  {% include head.html %}
+
+  <body id="page-top">
+
+    <header>
+      {% include header.html %}
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ "/assets/resume_theme/js/resume.js" | relative_url }}"></script>
+
+  </body>
+
+</html>

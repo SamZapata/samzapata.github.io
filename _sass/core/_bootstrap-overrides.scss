@@ -1,0 +1,36 @@
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+a {
+  color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary, 15%);
+  }
+}
+
+.carousel-item {
+	width: 100%;
+}
+
+.carousel-caption {
+	width: auto;
+	background-color: #98001223;
+	margin-left: -90px;
+	margin-bottom: -20px;
+}
+
+.resume-content .card {
+	max-width: 600px;
+}
+
+@media (max-width: 768px) {
+	.carousel-item {
+	}
+}

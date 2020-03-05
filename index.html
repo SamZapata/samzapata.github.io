@@ -1,14 +1,28 @@
-<head>
+---
+layout: main
+me: jsam
+---
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+<div class="container-fluid p-0 bg-content" id="bg-color">
 
-  <!-- <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}" /> -->
-  <link rel="shortcut icon" href="/favicon.png" />
-</head>
+  {% include_relative _pages/presentation.html %}
 
-<body>
-  <h1>hola cruel mundo!</h1>
-</body>
+  <hr class="m-0">
+
+  {% include_relative _pages/work_experience.html %}
+
+  <hr class="m-0">
+
+  {% include_relative _pages/education.html %}
+
+  <hr class="m-0">
+
+  {% include_relative _pages/skills.html %}
+
+  <hr class="m-0">
+
+  {% include_relative _pages/life_style.html %}
+
+  <hr class="m-0">
+
+</div>
