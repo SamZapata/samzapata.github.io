@@ -26,6 +26,15 @@ a {
 	margin-bottom: -20px;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: #950606;
+  color: black;
+  width: 30px;
+  height: 15px;
+  // box-shadow: 2px 2px red;
+  opacity: 0.5;
+}
+
 .resume-content .card {
 	max-width: 600px;
 }
