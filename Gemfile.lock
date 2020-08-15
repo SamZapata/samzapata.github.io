@@ -65,6 +65,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  i18n
   jekyll
 
 BUNDLED WITH
