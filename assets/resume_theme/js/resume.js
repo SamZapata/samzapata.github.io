@@ -30,15 +30,14 @@
 
 
   // responsive button to change backgroun color
-  // screen size
   if (screen.width <= 991) {
-    $('footer.color-mode').css('display', 'none');
-    var nav = document.getElementById('menu-list');
-    var changeBg = document.createElement('footer.color-mode');
-    changeBg.innerHTML = 'mode';
-    nav.appendChild(changeBg);
+    // $('footer.color-mode').css('display', 'none');
+    // var nav = document.getElementById('menu-list');
+    // var changeBg = document.createElement('footer.color-mode');
+    // changeBg.innerHTML = 'mode';
+    // nav.appendChild(changeBg);
     // Change background color
-    changeBg.onclick = changeBgColor;
+    // changeBg.onclick = changeBgColor;
   }
 
   //function to change background color

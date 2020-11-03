@@ -9,6 +9,9 @@
       outline-color: lighten($primary, 15%);
     }
   }
+  .icon-center {
+    margin-left: -1.25rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -23,10 +26,15 @@
 
     width: $sidebar-base-width;
     height: 100vh;
+
+    .icon-center {
+      margin-left: -1rem;
+    }
+
     .navbar-brand {
       display: flex;
 
-      margin: auto auto 0;
+      // margin: auto auto 0;
       padding: 0.5rem;
       .img-profile {
         max-width: 10rem;
@@ -40,7 +48,7 @@
       flex-grow: 0;
 
       width: 100%;
-      margin-bottom: auto;
+      margin-bottom: 50% !important;
       .navbar-nav {
         flex-direction: column;
 
@@ -52,6 +60,14 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (min-height: 800px) {
+  #sideNav {
+    .navbar-collapse {
+      margin-bottom: auto !important;
     }
   }
 }
