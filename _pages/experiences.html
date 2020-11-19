@@ -123,39 +123,49 @@
           <div class="academic-tab-content">
             <p class="mb-4 mt-4">Mi proceso de formación académico:</p>
             <div id="accordion">
+              <!-- professional -->
+              <div class="card border-light">
+                <div class="card-header" id="professional">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseProfessional" aria-expanded="true" aria-controls="collapseProfessional">
+                      Etapa Técnica y Profesional
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseProfessional" class="collapse show" aria-labelledby="professional" data-parent="#accordion">
+                  <div class="card-body">
+                    <p><strong>Ingeniero de Sistemas</strong></p>
+                    <p>Universidad Santiago de Cali
+                    <br>Cali, 2019
+                    <br>Proyecto de grado: <a href="https:maulproject.herokuapp.com" target="_blank">Maul Project</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- schoolar -->
               <div class="card border-light">
                 <div class="card-header" id="schoolar">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSchoolar" aria-expanded="true" aria-controls="collapseSchoolar">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSchoolar" aria-expanded="false" aria-controls="collapseSchoolar">
                       Etapa Escolar
                     </button>
                   </h5>
                 </div>
 
-                <div id="collapseSchoolar" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseSchoolar" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
+                    <!-- one -->
                     <p><strong>Bachiller Técnico Comercial</strong></p>
                     <p class="ml-2">Colegio Centro Docente Bartolomé Mitre
+                    <br>Cali, 2008</p>
+                    <!-- two -->
+                    <p><strong>Técnico Auxiliar Mantenimiento de Computadores</strong></p>
+                    <p class="ml-2">SENA - Servicio Nacional de Aprendizaje
                     <br>Cali, 2008</p>
                   </div>
                 </div>
               </div>
-              <div class="card border-light">
-                <div class="card-header" id="professional">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseProfessional" aria-expanded="false" aria-controls="collapseProfessional">
-                      Etapa Técnica y Profesional
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseProfessional" class="collapse" aria-labelledby="professional" data-parent="#accordion">
-                  <div class="card-body">
-                    <p><strong>Ingeniero de Sistemas</strong></p>
-                    <p>Universidad Santiago de Cali</p>
-                    <p>Cali, 2019</p>
-                  </div>
-                </div>
-              </div>
+              <!-- others -->
               <div class="card border-light">
                 <div class="card-header" id="other">
                   <h5 class="mb-0">
@@ -166,7 +176,14 @@
                 </div>
                 <div id="collapseOt" class="collapse" aria-labelledby="other" data-parent="#accordion">
                   <div class="card-body">
-                    ...
+                    <!-- one -->
+                    <p><strong>Bases del Entrenamiento Deportivo</strong></p>
+                    <p class="ml-2">SENA - Servicio Nacional de Aprendizaje
+                    <br>Cali, 2016</p>
+                    <!-- two -->
+                    <!-- <p><strong>...</strong></p>
+                    <p class="ml-2">...
+                    <br>...</p> -->
                   </div>
                 </div>
               </div>
