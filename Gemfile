@@ -7,4 +7,4 @@ gem "jekyll"
 
 gem 'haml'
 
-gem 'i18n'
+# gem 'i18n'
