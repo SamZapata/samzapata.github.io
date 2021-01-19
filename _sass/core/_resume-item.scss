@@ -1,4 +1,5 @@
 section.resume-section {
+  padding: 3rem 2rem;
   .resume-item {
     .resume-date {
       min-width: none;
@@ -7,13 +8,21 @@ section.resume-section {
 }
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
     .resume-item {
       .resume-date {
         min-width: 18rem;
       }
     }
+    .heading-name {
+      font-size: 2.5rem;
+      margin-top: -5rem;
+      margin-left: 10rem;
+    }
   }
 }
-// @media (min-width: 992px) {
-// }
+
+@media (max-width: 800px) {
+  section.resume-section {
+    padding: 0;
+  }
+}
