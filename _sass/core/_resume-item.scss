@@ -6,23 +6,67 @@ section.resume-section {
     }
   }
 }
-@media (min-width: 768px) {
+
+@media (min-width: 317px) {
   section.resume-section {
-    .resume-item {
-      .resume-date {
-        min-width: 18rem;
-      }
-    }
-    .heading-name {
-      font-size: 2.5rem;
-      margin-top: -5rem;
-      margin-left: 10rem;
-    }
+    padding: 0px;
+  }
+  br{
+    display: visible;
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 418px) {
   section.resume-section {
-    padding: 0;
+    padding: 10px;
   }
 }
+
+@media (min-width: 576px) {
+  section.resume-section {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    padding: 10px;
+  }
+  br{
+    display: none;
+  }
+  .subheading {
+    margin-left: 23%;
+    margin-top: 1.0em !important;
+  }
+  p.lead {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding: 10px;
+  }
+}
+
+// @media (min-width: 768px) {
+//   section.resume-section {
+//     .resume-item {
+//       .resume-date {
+//         min-width: 18rem;
+//       }
+//     }
+//     .heading-name {
+//       font-size: 2.5rem;
+//       margin-top: -5rem;
+//       margin-left: 10rem;
+//     }
+//   }
+// }
+
+// @media (min-width: 800px) {
+//   section.resume-section {
+//     padding: 0;
+//   }
+// }
