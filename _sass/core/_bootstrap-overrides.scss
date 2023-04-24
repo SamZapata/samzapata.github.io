@@ -42,12 +42,13 @@ a {
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
-  background-color: #950606;
-  color: black;
-  width: 30px;
-  height: 15px;
+  background-color: $gray-300;
+  color: $gray-200;
+  width: 20px;
+  height: 20px;
   // box-shadow: 2px 2px red;
   opacity: 0.5;
+  border-radius: 50%;
 }
 
 .resume-content .card {
