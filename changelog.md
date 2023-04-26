@@ -1,6 +1,12 @@
-# Changelog 
+# Changelog
 
-### [24/04/2023] - Updating in english
+### [25/04/2023] - Improve I Can Do section
+
+- Add title "I can do"
+- Add carousel items
+- Add icons and text for each section
+
+### [24/04/2023] - Updating Part II
 
 - update section Icando with icons
 - adjust svg icons
