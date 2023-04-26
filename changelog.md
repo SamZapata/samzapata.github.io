@@ -1,5 +1,9 @@
 # Changelog
 
+### [26/04/2023] - Text only in English
+
+- Improve the experiences section in english part I.
+
 ### [25/04/2023] - Improve I Can Do section
 
 - Add title "I can do"
