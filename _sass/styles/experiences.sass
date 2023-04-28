@@ -1,26 +1,41 @@
-.icando-section
-  background-color: #e0d8d845
+.experiences-section
+  // background-color: #e0d8d845
 
-  .nav-link
-    background-color: #f8f9fa
-    &.active
-      background-color: #810202
+  // .nav-link
+  //   background-color: #f8f9fa
+  //   &.active
+  //     background-color: #810202
 
-  // .careers-tab-content
-  //   .card-header
-  //     background-color: #000000
-  //     h4.card-title
-  //       color: #ffffff
-  //       margin-top: 1rem
+  ul.nav
+      flex-wrap: nowrap !important
+  ul
+    // .scrollmenu
+    background-color: $dark 
+    overflow: auto
+    white-space: nowrap
+    li.nav-item
+      display: inline-block
+      a.nav-link
+        display: inline-block
+        font-size: 1.001rem
+        color: white
+        text-align: center
+        padding: 14px
+        text-decoration: none
+        border-color: none
+        border: none
+        border-top-left-radius: none !important
+        border-top-right-radius: none !important
 
-  .academic-tab-content
-    .card-header
-      background-color: #000000
-      min-width: calc(40vw)
+      a.nav-link.active
+        color: #810202
+        background-color: #777
 
-      .btn.btn-link
-        color: #ffffff
-        font-size: 1.5rem
+      a:hover
+        background-color: #777
+        color: #810202
+      .badge
+        border-radius: 0
 
   .phrasing
     font-size: 2rem
@@ -50,5 +65,37 @@
 
   .card-header
     border-bottom: 0rem
+    background-color: #777
     h4.card-title
       margin-bottom: 0rem
+      color: #810202
+
+  img.img-background
+    width: 100%
+    max-width: 600px
+
+  .container
+    position: relative
+    max-width: 100%
+    margin: 0 auto
+    .content
+      position: absolute
+      bottom: 0
+      background: rgba(233, 224, 225, 0.72)
+      color: $dark
+      width: 15rem
+      height: 7rem
+      padding: 20px
+      // border-top-right-radius: 7rem
+      // border-top-left-radius: 
+  .container img
+    vertical-align: middle
+  
+  
+  .visual-experience-box
+    height: 10rem
+    width: 10rem
+    border: 1px solid
+    .visual-experience
+
+  
