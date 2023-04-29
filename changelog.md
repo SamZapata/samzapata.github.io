@@ -4,7 +4,7 @@
 
 - Updated the "I Can Do" section
 - Updated the "Experiences" section
-- 
+- Added the "Contact Me" section
 
 ### [26/04/2023] - Text only in English
 
