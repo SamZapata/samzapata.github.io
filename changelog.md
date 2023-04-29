@@ -1,5 +1,11 @@
 # Changelog
 
+### [29/04/2023] - Updating from 27 and 28
+
+- Updated the "I Can Do" section
+- Updated the "Experiences" section
+- 
+
 ### [26/04/2023] - Text only in English
 
 - Improve the experiences section in english part I.
