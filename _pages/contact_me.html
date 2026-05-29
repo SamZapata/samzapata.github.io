@@ -1,28 +1,57 @@
-<section class="contactme-section p-3 p-lg-5 d-flex align-items-center" id="contactme">
-  <div class="w-100">
-    <h2 class="mb-5">Contact Me</h2>
-    <p>
-      Talk with me!
-    </p>
-    
-    <div class="container">
-      <form action="mailto:jsamuelzapata@gmail.com" method="post" enctype="text/plain">
-    
+<div class="container section">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <h3>Let's talk</h3>
+      <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+        <a href="mailto:jsamzapata@gmail.com">jsamzapata@gmail.com</a>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon"><i class="fab fa-github"></i></div>
+        <a href="https://github.com/SamZapata" target="_blank">github.com/SamZapata</a>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon"><i class="fab fa-linkedin-in"></i></div>
+        <a href="https://www.linkedin.com/in/johnny-s-zapata-s" target="_blank">linkedin.com/in/johnny-s-zapata-s</a>
+      </div>
+
+      <div class="hero-social mt-4">
+        <a href="https://github.com/SamZapata" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/johnny-s-zapata-s" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:jsamzapata@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form" action="mailto:jsamuelzapata@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
         <label for="fname">Full Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your full name..">
-    
+        <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your full name">
+      </div>
+      <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your email..">
-        
+        <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
+      </div>
+      <div class="form-group">
         <label for="phone">Contact Number</label>
-        <input type="text" id="phone" name="phone" placeholder="Your number phone..">
-    
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
-    
-      </form>
-    </div> 
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Your phone number">
+      </div>
+      <div class="form-group">
+        <label for="subject">Message</label>
+        <textarea class="form-control" id="subject" name="subject" placeholder="Write something..."></textarea>
+      </div>
+      <button type="submit" class="btn-primary-custom">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+    </form>
   </div>
-</section>
+</div>

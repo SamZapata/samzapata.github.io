@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+#lifestyle {
+  background: $gray-100;
+}
+
+.life-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.life-card {
+  background: $white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid $gray-200;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+  }
+}
+
+.life-card-icon {
+  font-size: 1.5rem;
+  color: $primary;
+  margin-bottom: 0.75rem;
+}
+
+.life-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: $gray-900;
+  margin-bottom: 0.35rem;
+}
+
+.life-card-text {
+  font-size: 0.85rem;
+  color: $gray-600;
+  line-height: 1.6;
+  margin-bottom: 0;
+}

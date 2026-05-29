@@ -1,4 +1,11 @@
 @charset "utf-8";
 
-@import "core/core";
-@import "style";
+@use "variables";
+@use "global";
+@use "nav";
+@use "hero";
+@use "experience";
+@use "skills";
+@use "life-style";
+@use "contact";
+@use "bootstrap-overrides";

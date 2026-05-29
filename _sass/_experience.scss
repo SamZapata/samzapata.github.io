@@ -1,0 +1,91 @@
+@use "variables" as *;
+
+#experience {
+  background: $gray-100;
+
+  .section-title {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.exp-card {
+  background: $white;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid $gray-200;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.exp-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exp-icon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  background: $primary-muted;
+  color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.exp-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $gray-900;
+  margin-bottom: 0.15rem;
+}
+
+.exp-card-sub {
+  font-size: 0.85rem;
+  color: $gray-500;
+  font-weight: 500;
+}
+
+.exp-card-body {
+  padding-left: 3.5rem;
+
+  p {
+    font-size: 0.9rem;
+    color: $gray-600;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+}
+
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+  padding-left: 3.5rem;
+}
+
+.exp-tag {
+  display: inline-block;
+  background: $primary-muted;
+  color: $primary;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+}

@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   {% include head.html %}
 
   <body id="page-top">
 
-    <header>
-      {% include header-one.html %}
-    </header>
+    {% include nav.html %}
 
     <main>
       {{ content }}
     </main>
 
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <!-- <script src="{{ "/assets/resume_theme/js/resume.js" | relative_url }}"></script> -->
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 
   </body>
 

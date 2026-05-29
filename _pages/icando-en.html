@@ -1,223 +1,108 @@
-<section class="icando-section p-3 p-lg-5 d-flex justify-content-center" id="icando">
-  <div class="w-100">
-    <div class="container">
-      <h2 class="mt-3 mb-2">What Can I Do ?</h2>
-      <p class="lead text-left">
-        I thought in a phrase to reply this question.
-      </p>
-      <div class="phrasing text-center">
-        <i>Test and Take the Challenge</i>
+<div class="container section">
+  <h2 class="section-title">Skills & Tools</h2>
+  <p class="mb-4" style="color: #6c757d; max-width: 600px;">
+    Technologies and tools I work with daily.
+  </p>
+
+  <div class="skill-groups">
+    <div class="skill-group">
+      <h3 class="skill-group-title">Languages & Frameworks</h3>
+      <div class="skill-group-items">
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/C-sharp-grayscale.svg" }}"></object></span>
+          C# / .NET
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/Ruby_logo.svg" }}"></object></span>
+          Ruby / Rails
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/sass-1.svg" }}"></object></span>
+          HTML / CSS / Sass
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/jekyll.svg" }}"></object></span>
+          Jekyll
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><i class="fab fa-js"></i></span>
+          JavaScript
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><i class="fab fa-angular"></i></span>
+          Angular
+        </span>
       </div>
     </div>
 
-    <!-- Carousel to show skills and main activies -->
-    <div id="carouselICanDo" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card border-light">
-            <div class="card-header">
-              <h4 class="card-title">Developing</h4>
-            </div>
-            <div class="card-body">
-              <div class="row skills-icons">
-                <div class="skill-icon-wrap">
-                  <div class="skill-logo">
-                    <object data="{{ "/assets/images/icons/C-sharp-grayscale.svg" }}" ></object>
-                  </div>
-                  <!-- <div class="skill-bar">
-                    bar
-                  </div> -->
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/net-framework.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/sql-server-full.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">MVP</strong>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/git-black.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/visual-studio.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">IIS</strong>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">SSRS</strong>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">SOLID</strong>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/Markdown-mark.svg" }}" ></object>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <strong>I can...</strong>
-              <p class="card-text">
-                Create components · Develop using the SOLID principles · Support to the user · Fix bugs · Create reports · Project documentation
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Two - RoR -->
-        <div class="carousel-item">
-          <div class="card border-light">
-            <div class="card-header">
-              <h4 class="card-title">Developing</h4>
-            </div>
-            <div class="card-body">
-              <div class="row skills-icons">
-                <div class="skill-icon-wrap">
-                  <div class="skill-logo">
-                    <object data="{{ "/assets/images/icons/Ruby_logo.svg" }}" ></object>
-                  </div>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/rails.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/postgresql.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/mongodb.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">MVC</strong>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/git-black.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">Html</strong>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/sass-1.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/jquery.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/linux-tux.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">SOLID</strong>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/Markdown-mark.svg" }}" ></object>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <strong>I can...</strong>
-              <p class="card-text">
-                Create components · Develop using the SOLID principles · Support to the user · Fix bugs · Create reports · Project documentation
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Three - React -->
-        <div class="carousel-item">
-          <div class="card border-light">
-            <div class="card-header">
-              <h4 class="card-title">Developing</h4>
-            </div>
-            <div class="card-body">
-              <div class="row skills-icons">
-                <div class="skill-icon-wrap">
-                  <div class="skill-logo">
-                    <object data="{{ "/assets/images/icons/reactjs.svg" }}" ></object>
-                  </div>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/node-js.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/git-black.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/jekyll.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/github.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">Html</strong>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">CSS</strong>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/Markdown-mark.svg" }}" ></object>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <strong>I can...</strong>
-              <p class="card-text">
-                Create a simple website · Create a landing page · Tech about these tools
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Four - Implement / Product Owner -->
-        <div class="carousel-item">
-          <div class="card border-light">
-            <div class="card-header">
-              <h4 class="card-title">Implement / Product Owner</h4>
-            </div>
-            <div class="card-body">
-              <div class="row skills-icons">
-                <div class="skill-icon-wrap">
-                  <div class="skill-logo">
-                    <object data="{{ "/assets/images/icons/sql-server-full.svg" }}" ></object>
-                  </div>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/microsoft.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/ms-project.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/server-cloud.svg" }}" ></object>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">CRM</strong>
-                </div>
-                <div class="skill-logo">
-                  <strong class="logo-text">ERP</strong>
-                </div>
-                <div class="skill-logo">
-                  <object data="{{ "/assets/images/icons/checklist.svg" }}" ></object>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <strong>I can...</strong>
-              <p class="card-text">
-                Analyze and manage requirements · Support to the user/system · Elaborate reports
-              </p>
-            </div>
-          </div>
-        </div>
+    <div class="skill-group">
+      <h3 class="skill-group-title">Databases</h3>
+      <div class="skill-group-items">
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/sql-server-full.svg" }}"></object></span>
+          SQL Server
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/postgresql.svg" }}"></object></span>
+          PostgreSQL
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/mongodb.svg" }}"></object></span>
+          MongoDB
+        </span>
       </div>
-      <a class="carousel-control-prev" href="#carouselICanDo" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselICanDo" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
 
-</section>
+    <div class="skill-group">
+      <h3 class="skill-group-title">Tools & Platforms</h3>
+      <div class="skill-group-items">
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/git-black.svg" }}"></object></span>
+          Git
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/github.svg" }}"></object></span>
+          GitHub
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/linux-tux.svg" }}"></object></span>
+          Linux
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/visual-studio.svg" }}"></object></span>
+          Visual Studio
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><object data="{{ "/assets/images/icons/microsoft.svg" }}"></object></span>
+          Windows IIS
+        </span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3 class="skill-group-title">AI & Productivity</h3>
+      <div class="skill-group-items">
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><i class="fas fa-robot"></i></span>
+          LLMs
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><i class="fas fa-microchip"></i></span>
+          Ollama
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><i class="fas fa-terminal"></i></span>
+          OpenCode
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><i class="fas fa-paint-brush"></i></span>
+          Canva
+        </span>
+        <span class="skill-tag">
+          <span class="skill-tag-icon"><i class="fas fa-file-powerpoint"></i></span>
+          Others
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

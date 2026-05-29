@@ -1,0 +1,47 @@
+@use "variables" as *;
+
+#mainNav {
+  background: rgba(26, 26, 46, 0.97);
+  backdrop-filter: blur(8px);
+  padding: 0.5rem 0;
+  min-height: $nav-height;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+
+  .container {
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $white;
+  }
+
+  .navbar-nav {
+    gap: 0.25rem;
+
+    .nav-link {
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 500;
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $white;
+        background: rgba(255, 255, 255, 0.08);
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 0.25rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
