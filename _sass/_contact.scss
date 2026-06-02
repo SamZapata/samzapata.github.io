@@ -13,6 +13,11 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+
+  @media (max-width: 991.98px) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 .contact-info {
