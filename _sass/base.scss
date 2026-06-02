@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-@use "variables";
-@use "global";
-@use "nav";
-@use "hero";
-@use "experience";
-@use "skills";
-@use "life-style";
-@use "contact";
-@use "footer";
-@use "bootstrap-overrides";
+@import "variables";
+@import "global";
+@import "nav";
+@import "hero";
+@import "experience";
+@import "skills";
+@import "life-style";
+@import "contact";
+@import "footer";
+@import "bootstrap-overrides";
