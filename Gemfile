@@ -7,6 +7,6 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll"
 
-gem 'haml'
+# gem "github-pages"
 
 # gem 'i18n'
