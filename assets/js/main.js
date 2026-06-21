@@ -6,7 +6,7 @@ $('#mainNav .nav-link').on('click', function () {
 // Rotating text in hero section
 class RotatingText {
   constructor(selector, phrases, options = {}){
-    this.element = document.querySelector(selector);
+    this.element = typeof selector === 'string' ? document.querySelector(selector) : selector;
     if (!this.element || !phrases.length) return;
     this.phrases = phrases;
     this.index = 0;
@@ -36,7 +36,7 @@ class RotatingText {
   }
 }
 
-new RotatingText('.hero-rotating-text', [
+const rotatingText = new RotatingText('.hero-rotating-text', [
   'API Integrations',
   'Web Development',
   'Software Engineering',
@@ -64,3 +64,7 @@ new RotatingText('.hero-rotating-text', [
     );
   });
 })();
+
+if (window.initI18n) {
+  window.initI18n(rotatingText);
+}

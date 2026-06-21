@@ -44,4 +44,38 @@
     padding: 0.25rem;
     color: rgba(255, 255, 255, 0.7);
   }
+
+  .nav-item-lang {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .lang-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.70rem !important;
+    padding: 0.25rem 0.10rem !important;
+    letter-spacing: 0.04em;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+    width: 2.2rem;
+
+    &:hover {
+      background: $primary;
+      border-color: $primary;
+      color: $white !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    #navbarNav{
+      justify-content: flex-end;
+    }
+  }
 }
