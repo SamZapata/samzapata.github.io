@@ -138,7 +138,7 @@
     }
   };
 
-  let currentLang = localStorage.getItem(LANG_KEY) || 'en';
+  let currentLang = localStorage.getItem(LANG_KEY) || 'es';
 
   function getTranslations(lang) {
     return translations[lang] || translations.en;
