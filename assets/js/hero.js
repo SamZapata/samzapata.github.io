@@ -1,68 +1,30 @@
-// const flows = [
-//   {
-//     selector: '.pulse-top',
-//     path: [
-//       { x: 300, y: 140 },
-//       { x: 300, y: 240 }
-//     ]
-//   },
-//   {
-//     selector: '.pulse-left',
-//     path: [
-//       { x: 180, y: 250 },
-//       { x: 280, y: 250 }
-//     ]
-//   },
-//   {
-//     selector: '.pulse-right',
-//     path: [
-//       { x: 320, y: 250 },
-//       { x: 420, y: 250 }
-//     ]
-//   },
-//   {
-//     selector: '.pulse-bottom',
-//     path: [
-//       { x: 300, y: 260 },
-//       { x: 300, y: 360 }
-//     ]
-//   }
-// ];
+// Node click → tech modal
+(function () {
+  const modal = document.getElementById('techModal');
+  if (!modal) return;
 
-// function animateFlow(flow, speed = 3000) {
+  const iconsContainer = document.getElementById('modalTechIcons');
+  const modalTitle = document.getElementById('techModalLabel');
 
-//   const dot = document.querySelector(flow.selector);
+  document.querySelectorAll('.node').forEach(node => {
+    node.style.cursor = 'pointer';
+    node.addEventListener('click', function () {
+      const techs = JSON.parse(this.dataset.techs || '[]');
+      const title = this.querySelector('span').textContent;
+      modalTitle.textContent = title;
 
-//   let start = null;
+      iconsContainer.innerHTML = techs.map(t => {
+        const iconHtml = t.icon === 'img'
+          ? `<img src="${t.src}" alt="${t.name}" class="tech-img-icon">`
+          : `<i class="${t.icon}"></i>`;
+        return `<div class="tech-icon-item">
+          ${iconHtml}
+          <span>${t.name}</span>
+        </div>`;
+      }).join('');
 
-//   function step(timestamp) {
-
-//     if (!start) start = timestamp;
-
-//     const progress =
-//       ((timestamp - start) % speed) / speed;
-
-//     const x =
-//       flow.path[0].x +
-//       (flow.path[1].x - flow.path[0].x) *
-//       progress;
-
-//     const y =
-//       flow.path[0].y +
-//       (flow.path[1].y - flow.path[0].y) *
-//       progress;
-
-//     dot.setAttribute("cx", x);
-//     dot.setAttribute("cy", y);
-
-//     requestAnimationFrame(step);
-
-//   }
-
-//   requestAnimationFrame(step);
-
-// }
-
-// flows.forEach(flow => animateFlow(flow));
-
+      $('#techModal').modal('show');
+    });
+  });
+})();
 

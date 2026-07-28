@@ -23,7 +23,7 @@
                     <i class="fas fa-envelope"></i> <span data-i18n="hero.cta_contact">Contact me</span>
                 </a>
                 <a href="#experience" class="btn-outline-custom">
-                    <i class="fas fa-arrow-down"></i> <span data-i18n="hero.cta_work">My work</span>
+                    <i class="fas fa-arrow-down"></i> <span data-i18n="hero.cta_work">Experiences</span>
                 </a>
             </div>
             <div class="hero-social">
@@ -47,31 +47,31 @@
             <div class="diagram-circle"></div>
 
             <!-- API -->
-            <div class="node node-api">
+            <div class="node node-api" data-techs='[{"icon":"fas fa-code","name":"REST APIs"},{"icon":"fas fa-sitemap","name":"SOAP/XML"},{"icon":"fas fa-cubes","name":"Microservices"},{"icon":"fas fa-plug","name":"Integrations"},{"icon":"fas fa-sync","name":"Webhooks"}]'>
             <i class="fas fa-cloud"></i>
             <span>API</span>
             </div>
 
             <!-- APP -->
-            <div class="node node-app">
+            <div class="node node-app" data-techs='[{"icon":"fab fa-microsoft","name":".NET"},{"icon":"img","src":"/assets/images/icons/C-sharp-grayscale.svg?v=2","name":"C#"},{"icon":"fas fa-gem","name":"RoR"},{"icon":"fab fa-angular","name":"Angular"},{"icon":"fab fa-react","name":"React"},{"icon":"fab fa-python","name":"Python"}]'>
             <i class="fas fa-laptop-code"></i>
             <span>APP</span>
             </div>
 
             <!-- WEB -->
-            <div class="node node-web">
+            <div class="node node-web" data-techs='[{"icon":"fab fa-html5","name":"HTML"},{"icon":"fab fa-css3","name":"CSS"},{"icon":"fab fa-js","name":"JavaScript"},{"icon":"fab fa-sass","name":"SASS"},{"icon":"img","src":"/assets/images/icons/jquery.svg","name":"jQuery"},{"icon":"fab fa-wordpress","name":"WordPress"},{"icon":"fab fa-bootstrap","name":"Bootstrap"},{"icon":"fab fa-npm","name":"npm"}]'>
             <i class="fas fa-globe"></i>
             <span>WEB</span>
             </div>
 
             <!-- DB -->
-            <div class="node node-db">
+            <div class="node node-db" data-techs='[{"icon":"img","src":"/assets/images/icons/sql-server.svg","name":"SQL Server"},{"icon":"img","src":"/assets/images/icons/postgresql.svg","name":"PostgreSQL"},{"icon":"fas fa-database","name":"NoSQL"},{"icon":"fas fa-cubes","name":"ORMs"},{"icon":"fas fa-file","name":"Reports"},{"icon":"fas fa-clock","name":"Jobs"}]'>
             <i class="fas fa-server"></i>
             <span>DATABASE</span>
             </div>
 
             <!-- CORE -->
-            <div class="node node-core">
+            <div class="node node-core" data-techs='[{"icon":"fab fa-git","name":"Git"},{"icon":"fab fa-docker","name":"Docker"},{"icon":"fab fa-microsoft","name":"Azure"},{"icon":"img","src":"/assets/images/icons/Microsoft-IIS.svg","name":"IIS"},{"icon":"fab fa-linux","name":"Linux"},{"icon":"fas fa-cogs","name":"DevOps"},{"icon":"fas fa-brain","name":"LLMs / AI"}]'>
             <span><img src="{{ "/assets/images/icons/me-favicon2.svg" }}" alt="jsam"></span>
             <span>CORE</span>
             </div>
@@ -114,5 +114,21 @@
             <p data-i18n="hero.service4_desc">Deployment, support and training.</p>
         </div>
     </div> 
+
+    <!-- Tech Modal -->
+    <div class="modal fade" id="techModal" tabindex="-1" role="dialog" aria-labelledby="techModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="techModalLabel">Tecnologías</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalTechIcons">
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
